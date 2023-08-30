@@ -16,4 +16,19 @@ moveSelectTxt.forEach(
 
 function opponentTurn() {
     
+    const randomSelect = Math.floor(Math.random() * 3 ) +1;
+
+    switch(randomSelect) {
+        case 1:
+            opponent = "Paper";
+            break;
+    
+        case 2:
+            opponent = "Scissors";
+            break;
+    
+        case 3:
+            opponent = "Rock";
+            break;
+    }
 }
