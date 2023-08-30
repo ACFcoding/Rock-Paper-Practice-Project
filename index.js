@@ -7,6 +7,7 @@ let player;
 let opponent;
 let gameResult;
 
+//experiment with this later
 moveSelectTxt.forEach(
     button => button.addEventListener("click", () => {
         player = button.textContent;
@@ -18,6 +19,7 @@ function opponentTurn() {
     
     const randomSelect = Math.floor(Math.random() * 3 ) +1;
 
+    //Switch cases for opponent move selection
     switch(randomSelect) {
         case 1:
             opponent = "Paper";
