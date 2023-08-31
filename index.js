@@ -12,6 +12,9 @@ moveSelectTxt.forEach(
     button => button.addEventListener("click", () => {
         player = button.textContent;
         opponentTurn();
+        playerTxt.textContent = `Player: ${player}`;
+        opponentTxt.textContent = `Opponent: ${opponent}`;
+        gameResultTxt.textContent = whoWins();
     })
     );
 
@@ -34,3 +37,6 @@ function opponentTurn() {
             break;
     }
 }
+function whoWins( {
+    
+})
