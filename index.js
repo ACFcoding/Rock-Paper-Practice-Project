@@ -37,6 +37,11 @@ function opponentTurn() {
             break;
     }
 }
-function whoWins( {
-    
-})
+function whoWins() {
+    if(player == opponent) {
+        return "Tie. Play again.";
+    }
+        else if(opponent == "Paper") {
+            return (player == "Scissors") ? "Victory! Well done!" : "Failure!"
+        }
+    }
