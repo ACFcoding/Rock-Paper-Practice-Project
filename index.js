@@ -37,11 +37,18 @@ function opponentTurn() {
             break;
     }
 }
+//Function that handles the game proper
 function whoWins() {
     if(player == opponent) {
         return "Tie. Play again.";
     }
         else if(opponent == "Paper") {
             return (player == "Scissors") ? "Victory! Well done!" : "Failure!"
+        }
+        else if(opponent == "Scissors") {
+            return (player == "Rock") ? "Victory! Well done!" : "Failure!"
+        }
+        else if(opponent == "Rock") {
+            return (player == "Paper") ? "Victory! Well done!" : "Failure!"
         }
     }
